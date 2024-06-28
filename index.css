@@ -1,4 +1,4 @@
-.BurgerContainer{
+/* .BurgerContainer{
     padding:  5px;
     color: brown;
     background-color: aquamarine;
@@ -23,4 +23,56 @@ width: 100%;
 #sideBar{
 border-right: 2px;
 border-color: black;
+} */
+
+
+.navbar {
+    background-color: black;
+    font-size: large;
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: bold;
+    --bs-nav-link-color: rgb(255, 255, 255);
+    --bs-nav-link-hover-color: #fd5429;
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: row; /* Ensure the items are in a row */
+    margin-left: auto; /* Push items to the right */
+    
+}
+
+.nav-item {
+    margin-left: 15px; /* Add space between nav items */
+    margin-right: 15px;
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.itemType {
+    font-size: 50px;
+    color: #fd5429;
+    border: 0px solid transparent;
+    background-color: transparent;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px; /* Optional: to ensure space around the text for the border */
+}
+
+.itemType:hover {
+    border-color: #fd5429;
+    border-radius: 0; /* Ensuring it is a square */
+    border-width: 8px;
+    border-style: solid;
 }
