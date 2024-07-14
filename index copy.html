@@ -9,69 +9,206 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    
     <title>Xsquare</title>
 </head>
 <body>
 
+<div class="container-fluid">
+
+
 <nav class="navbar" style="background-color: black;">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="X2 logo_Orange_x_white on transparent.png" class="img-fluid" width="200">
+            <img src="X2 logo_Orange_x_white on transparent.png" class="img-fluid" width="200" alt="XSQUARE Logo">
         </a>
         <ul class="navbar-nav ms-auto d-flex flex-row">
             <li class="nav-item">
                 <a class="nav-link" href="#"> Home </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"> Order Now </a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#"> About Us </a>
             </li>
         </ul>
     </div>
+    
 </nav>
 
-<br>
-<div class="row text-center">
-    <div class="col-md-4">
-        <button class="itemType">Burgers</button>
-    </div>
-    <div class="col-md-4">
-        <button class="itemType">Pasta</button>
-    </div>
-    <div class="col-md-4">
-        <button class="itemType">Fries</button>
-    </div>
-</div>
 
-<br>
-<div class="row text-center">
-  <div class="card" >
-    <div class="row">
-      <div class="col-md-4">
-<img src="images\SquareBurger.png" class="img-fluid">
-</div>
-<div class="col-md-8">
-<h2>Square burger</h2>
-<p>Lorem Ipsum Sure, here's a sample paragraph you can use for testing:
-
-  ---
+<div class="container-fluid d-flex justify-content-center" id="OrderNowContainer">
+  <button class="btn  btn-warning OrderButton">Order Now</button>
   
-  Welcome to Xsquare, where we bring you the finest culinary experiences right to your table. Our menu is meticulously crafted to offer a variety of dishes that cater to every palate. From our succulent burgers made with the freshest ingredients to our rich and creamy pasta that embodies the true essence of Italian cuisine, every dish is prepared with utmost care and precision. Our crispy, golden fries are the perfect accompaniment to any meal, offering a delightful crunch with every bite. At Xsquare, we believe in delivering not just food, but an experience that is memorable and enjoyable. Whether you are dining in or ordering online, our commitment to quality and service remains unwavering. Join us and savor the flavors that make Xsquare a culinary haven for food enthusiasts.</p>
-
 </div>
 
 
-
 </div>
+
+<div class="row x-Pattern" >
+</div>
+<br>
+<div class="row text-center">
+    <div class="col-4">     
+      <button class="itemType"><img src="images\BurgerLogo2.png" class="img-fluid typeImage">
+        Burgers </span> </button>
+      </div>
+    
+
+    <div class="col-4">     
+      <button class="itemType"><img src="images\PastaLogo2.png" class="img-fluid typeImage">  
+      Pasta</button>
+      </div>
+
+    <div class="col-4">
+      <button class="itemType">
+      <img src="images\FriesLogo.png" class="img-fluid typeImage"> 
+      Fries</button>
     </div>
+</div>
+<br>
+<br>
+<div class="container-fluid d-flex justify-content-center " id="cardContainer">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-2"><img src="images\PremiumSticker1.png" class="premium-img-left"><img src="images\PremiumSticker3.png" class="premium-img-left"></div>
+    <div class="col-md-8">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="custom-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+          <div class="img-wrapper">
+            <img src="images\Burger_Square burger.png" class="img-fluid burger-img float-left" alt="Square Burger Image" >
+          </div>
+          </div>
+          <div class="col-md-8">
+          <h1 class="card-title">Square Burger</h1>
+          <p class="card-text">Special square sauce topped
+            with cheese, on a bed of
+            onions, lettuce and tomatoes,
+            in butter and milk bread.</p></div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="custom-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+          <div class="img-wrapper">
+            <img src="images\Burger_XCheese burger.png" class="img-fluid burger-img float-left" alt="Square Burger Image">
+          </div>
+          </div>
+          <div class="col-md-8">
+          <h1 class="card-title">X-Cheese Burger</h1>
+          <p class="card-text">Loaded with a mix of four
+            cheeses, homemade
+            picklesm topped with
+            caramelized onions, in
+            butter and milk bread.</p></div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="custom-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+          <div class="img-wrapper">
+            <img src="images\Burger_Blue Xplosion.png" class="img-fluid burger-img float-left" alt="Square Burger Image" >
+          </div>
+          </div>
+          <div class="col-md-8">
+          <h1 class="card-title">Blue Xplosion</h1>
+          <p class="card-text">Blue cheese explosion,
+            caramelized onions, on a bed
+            of lettuce and tomatoes,
+            butter and milk ciabatta
+            bread.</p></div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="custom-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+          <div class="img-wrapper">
+            <img src="images\Burger_Italianburger.png" class="img-fluid burger-img float-left" alt="Square Burger Image">
+          </div>
+          </div>
+          <div class="col-md-8">
+          <h1 class="card-title">Italian Burger</h1>
+          <p class="card-text">The magical taste of Italian
+            Pesto, mozzarella, fresh
+            tomatoes in a tasty butter
+            and milk ciabatta bread.</p></div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="custom-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+          <div class="img-wrapper">
+            <img src="images\Burger_Dutch burger.png" class="img-fluid burger-img float-left" alt="Square Burger Image">
+          </div>
+          </div>
+          <div class="col-md-8">
+          <h1 class="card-title">Dutch Burger</h1>
+          <p class="card-text">Sauteed mushroom, dutch
+            cheese, savory mayo, on a
+            bed of tomatoes, in butter
+            and milk bread.</p></div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="custom-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+          <div class="img-wrapper">
+            <img src="images\Burger_Western burger.png" class="img-fluid burger-img float-left" alt="Square Burger Image">
+          </div>
+          </div>
+          <div class="col-md-8">
+          <h1 class="card-title">Western Burger</h1>
+          <p class="card-text">BBQ, Bacon and Jalapeno
+            western style, on a bed of
+            lettuce and tomatoes, in
+            butter and milk bread.</p></div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<div class="col-md-2"><img src="images\PremiumSticker2.png" class="premium-img-right"><img src="images\PremiumSticker4.png" class="premium-img-right" ></div>
+</div>
+  
+
 
 
 
 
 </div>
-
 </body>
 </html>
+
+
+
+
+

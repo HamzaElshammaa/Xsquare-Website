@@ -1,30 +1,3 @@
-/* .BurgerContainer{
-    padding:  5px;
-    color: brown;
-    background-color: aquamarine;
-    border: 100px;
-    border-color: blueviolet;
-}
-
-
-#topBar{
-background-color: black;
-color: white;
-width: 100%;
-}
-#Slogan{
-    color: orange;
-    z-index: 1;
-    margin-bottom: 1000px;
-    padding-bottom: 20px;
-    background-color: black;
-    width: 100%;
-}
-#sideBar{
-border-right: 2px;
-border-color: black;
-} */
-
 
 .navbar {
     background-color: black;
@@ -61,18 +34,231 @@ border-color: black;
 }
 
 .itemType {
-    font-size: 50px;
-    color: #fd5429;
+    font-size: 40px;
+    color: black;
     border: 0px solid transparent;
     background-color: transparent;
-    font-weight: bold;
     display: inline-block;
-    padding: 10px; /* Optional: to ensure space around the text for the border */
+    padding:  4px; /* Optional: to ensure space around the text for the border */
+    font-size: 100px;
+    font-family: 'Meuga', Arial, sans-serif;
+    
 }
 
 .itemType:hover {
     border-color: #fd5429;
     border-radius: 0; /* Ensuring it is a square */
-    border-width: 8px;
+    border-width: 5px;
     border-style: solid;
+   border
+}
+
+
+.card{
+ border: 10px solid #fd5429;
+ width:60%;
+ margin: 0.5em;
+}
+
+.BurgerContainer{
+    background-color: #fd5429;
+    border:10px #fd5429;
+}
+#cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/blackboard-backgrounds-wallpapers.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+
+#OrderNowContainer{
+    
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/Burger_Square burger.png');
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    width: 100%;
+    height: 50vw;
+}
+
+@media screen and (min-width:576px) {
+
+
+  
+    .carousel-inner{
+        display: flex;
+    }
+
+
+    
+/*     .img-wrapper{
+        max-width: 10%;
+        height:23vw;
+    } */
+
+
+    .burger-img{
+        
+        max-width: 300px;
+        position: absolute;
+        top: -20px;
+        left: -60px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        float: left;
+        
+    }
+    
+    .card-title{
+        color: white;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        font-size: 50px;
+        line-height: 1;
+        font-family: 'Reem Kufi', Arial, sans-serif;
+    }
+    .card-text{
+        margin-top: 10px; /* Reduced margin to raise the text */
+        /* font-size: clamp(1px, 2vw + 1rem, 24px); */ /* Responsive font size */
+        font-size:24px;
+        text-align: left; /* Align text to the left */
+        color: rgb(255, 255, 255); /* Set text color to white for better contrast */
+        line-height: 1.5;
+    }
+
+}
+
+.carousel-inner{
+    padding: 1em;
+
+}
+
+/* .img-wrapper{
+    max-width: 50%;
+    height:17vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+} */
+
+
+
+
+
+.img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.custom-card{
+    background-color: #fd5429;
+    border-radius: 15px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    width: 90%;
+    max-width: 700px;  
+    margin: 0 auto 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 18);
+}
+
+.burger-img{
+    max-width: 40%;
+    position: absolute;
+    top: -20px;
+    left: -60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    float: left;
+    
+    
+}
+
+
+
+.card-title{
+    color: white;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    font-size: 30px;
+    line-height: 1;
+    font-family: 'Reem Kufi', Arial, sans-serif;
+}
+
+.card-text{
+    margin-top: 10px; /* Reduced margin to raise the text */
+    /* font-size: clamp(1px, 2vw + 1rem, 24px); */ /* Responsive font size */
+    font-size:24px;
+    text-align: left; /* Align text to the left */
+    color: rgb(255, 255, 255); /* Set text color to white for better contrast */
+    line-height: 1.5;
+    flex: 1;
+}
+
+.typeImage{
+    width: 80px;
+}
+
+.x-Pattern {
+    background-image: url('images/xpattern.jpg') ;
+    height: 50px;
+    background-size: 60px 50px;
+    
+}
+
+.premium-img-right {
+    max-width: 150px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.premium-img-left {
+    max-width: 180px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .card-text{
+        margin-top: 10px; /* Reduced margin to raise the text */
+        /* font-size: clamp(1px, 2vw + 1rem, 24px); */ /* Responsive font size */
+        font-size:14px;
+        text-align: left; /* Align text to the left */
+        color: rgb(255, 255, 255); /* Set text color to white for better contrast */
+        line-height: 1.5;
+    }
+
+    .premium-img-left {
+        max-width: 00px; /* Adjust the maximum width as needed */
+        height: auto; /* Maintains the aspect ratio */
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    .premium-img-right {
+        max-width: 0px; /* Adjust the maximum width as needed */
+        height: auto; /* Maintains the aspect ratio */
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+}
+
+.OrderButton{
+    font-size: 100px;
+    color: #fd5429;
 }
