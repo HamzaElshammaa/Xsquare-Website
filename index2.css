@@ -1,0 +1,235 @@
+/* General styles */
+
+
+:root{
+  --ff: "Montserrat", sans-serif;
+  --colorp: #fd5429;
+  --colorp2: #fff;
+  --colorbody: #1e1e1e;
+  --colors: #333;
+  --h1: bold 54px/60px var(--ff);
+  --h2: bold 2vw/2vw var(--ff);
+  --h3: bold 24px/36px var(--ff);
+  --links: 4vw/4vw var(--ff);
+  --p: 6vw/6vw var(--ff);
+  --p1: 24px/30px var(--ff);
+  --p2: 36px/48px var(--ff);
+  --subtext: 12px/20px var(--ff);
+  --transition: 0.3s ease-in-out;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bodySection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorp);
+    padding: 20px;
+    color: var(--colorp2);
+    box-shadow: 100 100 150px rgba(0, 0, 0, 0.6);
+}
+
+.bodySection h1{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow to text */
+}
+
+/* TitleSection container styling */
+.TitleSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0,0);
+    padding: 20px;
+    color: var(--colorp2);
+}
+
+.text-container {
+    max-width: 60%;
+}
+
+.text-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container h1 {
+    /* font-size: 5rem; */
+    font: var(--p);
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6); /* Add shadow to text */
+}
+
+.text-container h2 {
+    font: var(--p);
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+.burger-image {
+    /* max-width: 70%; */
+    width: 50vw;
+    height: auto;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.burger-image:hover{
+    scale: 1.05;
+    transition: var(--transition);
+  }
+
+  .buttons {
+    display: flex;
+    margin: 100px auto;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .buttons > *{
+    cursor: pointer;
+    background: var(--colorbody);
+    text-decoration: none;
+    font: var(--links);
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: var(--colora);
+    transition: var(--transition);
+    }
+
+    .buttons > *:hover{
+        transition: var(--transition);
+        }
+
+  .crispy-fill{
+    background: var(--colorp);
+    color: var(--colorp2);
+    border: solid 2px var(--colorp2);
+    box-shadow: 0 4px var(--colorp2);
+  }
+  .crispy-fill:hover {
+    box-shadow: 0 8px var(--colorp2);
+  }
+/* Responsive design */
+@media (max-width: 768px) {
+    .TitleSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .burger-image {
+        /* max-width: 70%; */
+        height: auto;
+        width: 70vw;
+        border-radius: 8px; /* Optional: Adds rounded corners if the image has rounded edges */
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+
+    .square-burger-section {
+      flex-direction: row;
+      text-align: center;
+  }
+  .square-burger-section img {
+    /* max-width: 70%; */
+    height: auto;
+    width: 40vw;
+    border-radius: 8px; /* Optional: Adds rounded corners if the image has rounded edges */
+}
+}
+
+.box{
+    font: var(--h2);
+    border: solid 2px var(--colorp);
+    padding:20px;
+    width: 20vw;
+  }
+  .flex{
+    display: flex;
+    gap: 0px;
+  }
+  .flex :nth-child(1){
+    flex: 1;
+  }
+  .flex :nth-child(2) {
+    flex: 2;
+  }
+  .flex :nth-child(3) {
+    flex: 3;
+  }
+
+
+  .square-burger-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorp);
+    padding: 2px;
+    color: var(--colorp2);
+   }
+
+   .square-burger-section img {
+    max-width: 700vw;
+    margin-left: 1vw;
+    height: auto;
+    margin-right: 1vw;
+}
+
+
+
+
+/* 
+  .square-burger-section {
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--colorp);
+    padding: 20px;
+    color: var(--colorp2);
+    
+}
+
+.square-burger-section .d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.square-burger-section img {
+    max-width: 100%;
+    margin-left: -10vw;
+    height: auto;
+    margin-right: -10vw;
+}
+
+.square-burger-section .ms-4 {
+    margin-left: -10rem;} /* Space between image and text */
+
+
+/*
+.square-burger-section h2 {
+  font-size: 7vw;
+  font-weight: bold;
+  margin-top: -200px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); }/* Add shadow to text */
+
+ */
+
+
+
+p {
+  font-size: 200rem;
+  margin: 0;
+}
